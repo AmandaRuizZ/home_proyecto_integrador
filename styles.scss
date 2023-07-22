@@ -1,0 +1,352 @@
+$primary: #6F275D;
+$danger: #48114D;
+$secondary: #FDDBDB;
+$success: #C79BCB;
+$warning: #E6FCF6;
+$light: #F3F3F3;
+$dark: #000000;
+$white: #FFFFFF;
+
+
+$theme-colors: (
+    "primary": $primary,
+    "danger": $danger,
+    "secondary": $secondary,
+    "success": $success,
+    "warning": $warning,
+    "light": $light,
+    "dark": $dark,
+    "white": $white,
+);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    font-family: 'Cabin', sans-serif;
+    background-color: #FDDBDB;
+    
+
+}
+
+/* ================= MENU NAVBAR ============================ */
+
+#menu {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#menu a {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#menu img {
+    height: 120px;
+    margin-left: 180px;
+    
+}
+
+#btnCarrito {
+    width: 90px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+/*============== estiloBell ==========*/
+
+#estiloBell {
+    background-image: url("/img/fondo_estiloBell.png");
+    background-size: cover;
+    max-height: fit-content;
+    min-height: 884px;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+}
+
+/*=============== #nosotros =================0*/
+article {
+
+    background-image: url("/img/fondo_nosotros.svg");
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    min-height: 380px;
+    max-height: fit-content;
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*=============== invierno =================0*/
+
+section article {
+    background-image: url("/img/fondo_invierno.svg");
+    background-size: cover;
+    background-position: center;
+    min-height: 00px;
+    text-align: center;
+    padding: 2%;
+    display: grid;
+    place-items: center;
+}
+
+/*============== Mas Vendido Cards Feña ============*/
+
+*{
+   
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+    max-height: 350px;
+}
+
+.card{
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    max-height: 600px;
+}
+
+.card-body{
+    padding: 25px;
+    margin-top: -20px;
+}
+
+#compraYalg {
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    background-color: #6F275D;
+    color: white;
+    width: 180px;
+    border-radius: 6px;
+    
+}
+.btn2{
+    text-align:center;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #6F275D;
+    border-radius: 20px 0 0 0;
+    width: 200px;
+    height: 50px;
+    padding: 15px;
+}
+
+#compraYalg:hover{
+    background-color: #FCE3E3;
+    border: none;
+}
+h1,h2,h3,h5,h6{
+    color: #48114D;
+    font-family: "Cabin", sans-serif;
+    font-weight: bold;
+   
+}
+.barra-horizontal{
+        position: absolute;
+        top: 97%;
+        left: 0;
+        width: 100%;
+        height: 9px;
+        background-color: #48114D;   
+}
+a{
+    color: #48114D;
+}
+
+#contCard{
+background-image: url("/img/fondo_cards.svg");
+background-position: center;
+background-size: cover;
+
+}
+
+/*==========Testimoniales============== */
+#testimonio {
+
+    background-image: url("/img/fondo_testimoniales.svg");
+    background-size: cover;
+    background-position: center;
+    min-height: 00px;
+    text-align: center;
+    padding: 2%;
+    display: grid;
+    place-items: center;
+    padding-top: 4%;
+}
+/*==========Testimoniales============== */
+
+div div div div div h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+    font-family: 'Cabin', sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin: 30px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 140px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #48114D;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+    opacity: .8;
+}
+.col-center {
+    
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+    
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid $danger;
+    border-width: 5px;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+   
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #48114D;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(83, 4, 50, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+#bg-testimonios{
+    background-position: center;
+    background-size: cover;
+    background-image: url(/img/Fondo_carusel.svg);
+}
+
+
+/*=================Hashtags==========*/
+.hashtags{
+    display: flexbox ;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+}
+
+/*=================PreguntasfaQ==============*/
+
+
+.background-container{
+    background-image: url(/img/fondo_pf.svg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+
+#FAQ1{
+    padding: 5%;
+    
+}
+.FAQ{
+    width: auto;
+    padding-top: 15%;
+    padding-bottom: 20%;
+   height: 880px;
+}
+.accordion{
+padding-left: 30%;
+padding-right: 30%;
+}
+
+
+#imgovillo{
+   image-rendering: auto;
+
+}
+
+
+footer{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+
+.layout1{
+    display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
