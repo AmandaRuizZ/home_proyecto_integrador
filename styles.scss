@@ -6,6 +6,7 @@ $warning: #E6FCF6;
 $light: #F3F3F3;
 $dark: #000000;
 $white: #FFFFFF;
+$bottom: #FDDBDB;
 
 
 $theme-colors: (
@@ -17,6 +18,7 @@ $theme-colors: (
     "light": $light,
     "dark": $dark,
     "white": $white,
+    "bottom":$bottom,
 );
 
 
@@ -113,14 +115,14 @@ section article {
 
 .card-img-top{
     border-radius: 50px;
-    padding: 20px;
-    max-height: 350px;
+    
+    max-height:450px;
 }
 
 .card{
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
-    max-height: 600px;
+    max-height: 650px;
 }
 
 .card-body{
@@ -294,7 +296,7 @@ h2::after {
 #bg-testimonios{
     background-position: center;
     background-size: cover;
-    background-image: url(/img/Fondo_carusel.svg);
+    background-image: url("/img/FONDO_cARRUSEL2.svg");
 }
 
 
@@ -350,3 +352,25 @@ footer{
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
 }
+
+
+
+.bottom-bar {
+    background-color:#FDDBDB;
+    height: 200px;
+    color:  #48114D;
+  }
+
+  .bottom-bar-logo {
+    font-weight: bold;
+  }
+
+  .bottom-bar-link {
+    color:  #48114D;
+    text-decoration: none;
+  }
+
+  .bottom-bar-section {
+    flex-grow: 1;
+    padding: 0 20px;
+  }
